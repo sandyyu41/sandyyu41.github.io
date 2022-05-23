@@ -1,142 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
+
 <head>
-	<meta charset="UTF-8">
-	<title>家庭作業05</title>
+    <meta charset="UTF-8">
+    <title>作業12</title>
+    <style>
+        h4 {
+            color: red;
+        }
 
-	<STYLE>
-    @font-face {
-         font-family: MyFont01;
-         src: url('宗楷體.ttf');
-    }
-    @font-face {
-         font-family: MyFont02;
-         src: url('竹風體01.ttf');
-         src: url('竹風體02.ttf');
-    }
-    .color1 { color: navy; }
-    .color2 { color: #808000; }
-    .color3 { color: #ff00ff; }
-    .color4 { color: #a0522d; }
-    .color5 { color: #006400; }
-    .color6 { color: #ff4500; }
-    .color7 { color: maroon; }
-    .color8 { color: teal; }
- div {
-     margin: 5px;
-     text-align: justify;
-       }
-       .box1{
-           width: 20%;
-           float: right;
-           height: 150px;
-           border-color: #663399;
-           border-width: 1px;
-           border-style: solid;
-           font-family: MyFont01;
-           }
-        .box2{
-           width: 20%;
-           float: right;
-           height: 150px;
-           border-color: #808000;
-           border-width: 2px;
-           border-style: double;
-           font-family: MyFont02;
-           }
-        .box3{
-           width: 20%;
-           float: right;
-           height: 150px;
-           border-color: #ff00ff;
-           border-width: 3px;
-           border-style: dashed;
-           font-family: "微軟正黑體";
-           }
-        .box4{
-           width: 20%;
-           float: right;
-           height: 150px;
-           border-color: #a0522d;
-           border-width: 4px;
-           border-style: dotted;
-           font-family: "標楷體";
-           }
-         .box5{
-           width: 20%;
-           float: left;
-           height: 150px;
-           border-color: #006400;
-           border-width: 1px;
-           border-style: solid;
-           font-family: MyFont01;
-           }
-           .box6{
-           width: 20%;
-           float: left;
-           height: 150px;
-           border-color: #ff4500;
-           border-width: 2px;
-           border-style: double;
-           font-family: MyFont02;
-           }
-           .box7{
-           width: 20%;
-           float: left;
-           height: 150px;
-           border-color: maroon;
-           border-width: 3px;
-           border-style: dashed;
-           font-family: "微軟正黑體";
-           }
-           .box8{
-           width: 20%;
-           float: left;
-           height: 150px;
-           border-color: teal;
-           border-width: 4px;
-           border-style: dotted;
-           font-family: "標楷體";
-           }
+        label {
+            color: blue;
+        }
 
-</STYLE>
+        input {
+            color: brown;
+        }
+        div {
+            color: blue;
+            margin: 5px;
+        }
+        table {
+            width: 40%;
+            border-color: dodgerblue;
+            border-style:solid;
+            border-collapse: collapse;
+        }
+        tr {
+            text-align: left;
+            border-color: dodgerblue;
+            border-style:solid;
+        }
+        td {
+            vertical-align: middle;
+            border-color: dodgerblue;
+            border-style:solid;
+        }
+        td:nth-child(1){
+            color: brown;
+        }
+    </style>
 </head>
+
 <body>
-<div>
-	<div class="box1"><span class="color1">
-		1.要知道，不論你是感到受傷或興奮，那個感覺都是在你內的，他人或外在的事物不是你的感覺之成因。
-	</span class="color1"></div>
-	<div class="box2"><span class="color2">
-		2.不要總是期待好事發生，你的工作就是：無論發生什麼事，都去寬恕。
-	<span class="color2"></div>
-	<div class="box3"><span class="color3">
-		3.這世界存在的真正目的，是給你一個修正自己「不信」的機會。
-	</span class="color3"></div>
-	<div class="box4"><span class="color4">
-		4.在你的自由內，沒有任何人能夠阻擋你放下恐懼與不安。
-	</span class="color4"></div>
-</div>
-
-<div>
-	<div class="box5"><span class="color5">
-		5.你的情緒導向系統是對準愛的，所以任何缺乏愛的經驗，都會給你負面的情緒回饋。
-	</span class="color5"></div>
-	<div class="box6"><span class="color6">
-		6.喜悅是你的本質，它是你的本我在沒有制約的狀況下所散發的感覺。
-		</span class="color6"></div>
-	<div class="box7"><span class="color7">
-		7.凡是對結局肯定不疑的人，才可能毫不焦慮地耐心等候。
-	</span class="color7"></div>
-	<div class="box8"><span class="color8">
-		8.在上帝的世界裡，問題不是靠方法去「解決」，而是經由確立「態度」去「決定」的。
-	</span class="color8"></div>
-</div>
-
-
-
-
-
-
+<form id="form01">
+    <label>姓名: </label>
+    <input type="text" name="name01" value="游子萱"><br>
+    <label>收件住址: </label>
+    <input type="text" name="address01" value="新北市三重區同安街45號"><br>
+    <label>電話: </label>
+    <input type="tel" name="tel01" value="0975403823"><br>
+    <label>電子郵件: </label>
+    <input type="email" name="email01" value="tempo90727@gmail.com"><br>
+    <label>指定送貨日期: </label>
+    <input type="date" name="date01"><br>
+    <label>水果種類: </label><br>
+    <input type="radio" name="fruit" id="fruit01" value="聖女番茄(1箱)">聖女番茄(1箱) 475元<br>
+    <input type="radio" name="fruit" id="fruit02" value="網狀綠肉哈密瓜(6台斤)">網狀綠肉哈密瓜(6台斤) 745元<br>
+    <input type="radio" name="fruit" id="fruit03" value="桃接李(5台斤)">桃接李(5台斤) 390元<br>
+    <input type="radio" name="fruit" id="fruit04" value="美濃香瓜(5台斤)">美濃香瓜(5台斤) 375元<br>
+</form>
+<br>
+<button onclick="shoppingInfo()"><h4>結帳</h4></button>
+<div id="demo"></div>
+<script>
+<script>
+var text="<h4>您的購物資訊如下:</h4>";
+var fruit = function (fruitType, fruitPrice, no){
+this.Type = fruitType;
+this.Price = fruitPrice;
+this.subTotal = function(no){
+text += "水果種類: " +this.Type + "; 共" + no+ "單位<br>";
+text += "價格小計: " +this.Price * no+ "元くbr>";
+};
+};
+var fruit01 = new fruit("聖女番茄(1箱)”,475, 0);
+var fruit02 - new fruit("網狀綠肉哈密瓜(6台斤)”,745,0);
+var fruit03 = new fruit("桃接李(5台斤)",390,0);
+var fruit03 = new fruit("美濃香瓜(5台斤)",375,0);
+    function shoppingInfo() {
+        const x = document.getElementById("form01");
+        var item = "";
+        var price = 0;
+        var text = "<h4>您的購物資訊如下:</h4>";
+        text += "<table>";
+        for (i = 0; i < 5; i++) {
+            text += "<tr>";
+            switch (i) {
+                case 0:
+                    item = "姓名: ";
+                    break;
+                case 1:
+                    item = "收件住址: ";
+                    break;
+                case 2:
+                    item = "電話: ";
+                    break;
+                case 3:
+                    item = "電子郵件: ";
+                    break;
+                case 4:
+                    item = "指定送貨日期: ";
+                    break;
+            }
+            text += "<td>" + item + "</td>";
+            text += "<td>" + x.elements[i].value + "</td>";
+            text += "</tr>";
+        }
+        for (i=5; i<=9; i++) {
+if(x.elements[i].checked === true){
+switch(i){
+case 5: fruit01.no = x.elements[i+1].value;
+sumToPay += fruit01.Price * fruit01.no;
+fruit01.subTotal(fruit01.no);
+break;
+case 7: fruit02.no = x.elements[i+1].value;
+sumToPay += fruit02.Price * fruit02.no;
+fruit02.subTotal(fruit02.no);
+break;
+case 9: fruit03.no = x.elements[i+1].value;
+sumToPay += fruit03.Price * fruit03.no;
+fruit03.subTotal(fruit03.no);\
+case 12: fruit04.no = x.elements[i+1].value;
+sumToPay += fruit03.Price * fruit03.no;
+fruit03.subTotal(fruit03.no);
+break;
+}
+}
+}
+                text += "<tr>";
+                text += "<td>" + "水果種類: " + "</td>";
+                text += "<td>" + x.elements[i].value + "</td>";
+                text += "</tr>";
+                text += "<tr>";
+                text += "<tr>";
+                text += "<td>" + "水果種類: " + "</td>";
+                text += "<td>" + x.elements[i].value + "</td>";
+                text += "</tr>";
+                text += "<tr>";
+                text += "<td>" + "價格合計: " + "</td>";
+                text += "<td>" + price + "元</td>";
+                text += "</tr>";
+            }
+        }
+        text += "</table>";
+        document.getElementById("demo").innerHTML = text;
+    }
+</script>
 
 </body>
+
 </html>
